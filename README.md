@@ -13,6 +13,6 @@ As a user, I want to be able to view my entire employee directory at once so tha
 Business Context
 An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
-link to the deployed site on Heroku: 
+link to the deployed site on Heroku: https://blooming-everglades-32175.herokuapp.com/
 
 link to the github repo: https://github.com/JustinMonty20/Employee-Directory
