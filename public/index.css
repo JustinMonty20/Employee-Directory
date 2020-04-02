@@ -1,12 +1,12 @@
 .container{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows:repeat(4,1fr);
+    grid-template-columns: repeat(6,250px);
+    grid-template-rows: repeat(5,250px);
 }
 
 .navbar{
-    grid-column: span 5/6;
-    grid-row: span 1/1;
+    grid-column: span 5 / 6;
+    grid-row: span 1 / 1;
     display: flex;
     justify-content: center;
     background-color: #29339B;
@@ -18,14 +18,13 @@
     color: whitesmoke;
 }
 
-.table {
-    display:flex;
-    justify-content: flex-start;
-    padding: 100px;
-    grid-column: 1 / span 5;
-    grid-row: 1 / span 6;
-    
+.table{
+    grid-row:span 3/ 5;
+    grid-column: span 3 / 4;
+    display: flex;
+    justify-content: center;
 }
+
 
 tbody, tr, td, th {
     border:1px solid black;

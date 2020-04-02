@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import API from "../utils/API";
 import TableData from "./TableData"
 import SearchBar from "./SearchBar";
+import Container from "./Container"
+import Nav from "./Nav"
 
 class Table extends Component {
     state = {
@@ -25,9 +27,16 @@ class Table extends Component {
 
     render() {
         return (
+          <Container>
+            <Nav>
+            </Nav>
+            <SearchBar/>
             <div className = "table">
                 <TableData people = {this.state.employees}/>
             </div>
+            </Container>
+
+
         )
     }
 }
