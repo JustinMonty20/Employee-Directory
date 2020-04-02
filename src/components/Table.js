@@ -17,12 +17,6 @@ class Table extends Component {
         this.setState({search: target.value})
     }
 
-    handleFilter = (e) => {
-        e.preventDefault();
-        this.setState({employees: this.state.employees.map(emp=> emp.name.first === this.state.search)})
-
-    }
-
     getRandoms = (query) => {
         API.search(query)
         .then(({data}) => this.setState({employees: data.results}))
@@ -32,7 +26,7 @@ class Table extends Component {
     render() {
         return (
             <div className = "table">
-            <TableData people = {this.state.employees}/>
+                <TableData people = {this.state.employees}/>
             </div>
         )
     }
