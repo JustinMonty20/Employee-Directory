@@ -7,7 +7,7 @@ function TableData(props) {
          <tbody>
             <tr className= "thead">
                <th>Picture</th>
-               <th>First and Last Name</th>
+               <th onClick>First and Last Name</th>
                <th>Phone #</th>
                <th>Email</th>
                <th>DOB</th>
