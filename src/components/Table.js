@@ -1,12 +1,25 @@
-import React, {Component} from "react";
+import React, {Component, useReducer} from "react";
 import API from "../utils/API";
 import TableData from "./TableData"
+import SearchBar from "./SearchBar";
 
+
+const [searchTerm, setSearchTerm] = useState("")
 
 class Table extends Component {
     state = {
-        employees: []
+        employees: [],
     }
+   
+    handler = (term) => {
+        setSearchTerm(term);
+    }
+
+   filterList = () => {
+       employees.filter(emp=> {
+           return emp.name
+       })
+   }
   
     componentDidMount() {
         this.getRandoms(25)
@@ -19,9 +32,10 @@ class Table extends Component {
 
     render() {
         return (
-           <div className = "table"> 
-             <TableData emp = {this.state.employees}/>
-           </div> 
+            <div className = "table">
+            <SearchBar terms = {}/>
+            <TableData people = {this.state.employees}/>
+            </div>
         )
     }
 }
